@@ -1,0 +1,235 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: white; /* White background */
+        }
+        .login-container {
+            background-color: #4a90e2; /* Blue background */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .login-container h1 {
+            margin-bottom: 20px;
+        }
+        .login-container label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            width: 100%;
+            text-align: left;
+        }
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #357ab8;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background-color: #2b5d8c;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        function validateCredentials() {
+            const correctUsername = "yourUsername"; // Correct username
+            const correctPassword = "yourPassword"; // Correct password
+
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            // Check password length
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters long.");
+                return;
+            }
+
+            if (username === correctUsername && password === correctPassword) {
+                document.querySelector('.login-container').classList.add('hidden'); // Hide the login form
+                document.querySelector('.success-container').classList.remove('hidden'); // Show the success message
+            } else {
+                alert("Incorrect username or password. Redirecting...");
+                window.location.href = "https://example.com"; // Redirect to another page
+            }
+        }
+
+        function showMessage() {
+            document.getElementById("message").classList.remove("hidden");
+        }
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form onsubmit="event.preventDefault(); validateCredentials();">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div class="success-container hidden">
+        <h1>Welcome!</h1>
+        <button onclick="showMessage()">Show Secret Message</button>
+        <p id="message" class="hidden">This is a secret message only visible after successful login!</p>
+    </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: white; /* White background */
+        }
+        .login-container {
+            background-color: #4a90e2; /* Blue background */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .login-container h1 {
+            margin-bottom: 20px;
+        }
+        .login-container label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            width: 100%;
+            text-align: left;
+        }
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #357ab8;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background-color: #2b5d8c;
+        }
+        .hidden {
+            display: none;
+        }
+        #message {
+            direction: rtl; /* Set text direction to RTL */
+            text-align: right; /* Align text to the right */
+            margin-top: 10px;
+            color: #333;
+            font-size: 16px;
+        }
+
+    </style>
+    <script>
+        function validateCredentials() {
+            const correctUsername = "yourUsername"; // Correct username
+            const correctPassword = "mahann"; // Correct password
+
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            // Check password length
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters long.");
+                return;
+            }
+
+            if (username === correctUsername && password === correctPassword) {
+                document.querySelector('.login-container').classList.add('hidden'); // Hide the login form
+                document.querySelector('.success-container').classList.remove('hidden'); // Show the success message
+            } else {
+                alert("Incorrect username or password. Redirecting...");
+                window.location.href = "https://example.com"; // Redirect to another page
+            }
+        }
+
+        function showMessage() {
+            document.getElementById("message").classList.remove("hidden");
+        }
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form onsubmit="event.preventDefault(); validateCredentials();">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div class="success-container hidden">
+        <h1>Welcome!</h1>
+        <button onclick="showMessage()">Show Secret Message</button>
+        <p id="message" class="hidden">این یک پیام محرمانه است که از راست به چپ نمایش داده می‌شود!</p>
+    </div>
+</body>
+</html>
